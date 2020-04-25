@@ -1,8 +1,4 @@
 function cat(){
-	console.log('helo')
-	this.stomach=[];
-}
-cat.prototype.eat=function (mouse) {
-	this.stomach.push(mouse)
+	console.log("meo meo");
 }
 module.exports=cat;
