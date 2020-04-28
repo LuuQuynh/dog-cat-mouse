@@ -4,4 +4,5 @@ var Tom=require('./cat')
 var tom=new Tom();
 dog.eat(tom);
 console.log(dog);
+console.log("let dog eat cat");
 
