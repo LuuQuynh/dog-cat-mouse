@@ -1,10 +1,15 @@
+var Mouse=require ('./Mouse');
 function cat(){
-	console.log("meo meo");
-	console.log('helo')
+	
 	this.stomach=[];
 }
-cat.prototype.eat=function (mouse) {
-	this.stomach.push(mouse)
+cat.prototype.eat=function (animal) {
+	if(animal instanceof Mouse){
+	this.stomach.push(animal);
+}
+else{
+	throw new Error('Cat can only eat mouse');
  }
+};
  
 module.exports=cat;
